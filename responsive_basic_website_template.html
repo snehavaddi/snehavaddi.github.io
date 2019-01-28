@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-color:#f1f1f1;
+margin:0;
+}
+*{box-sizing:border-box;}
+.header{
+text-align:center;
+background-color:white;
+margin:10px;
+padding:30px;
+}
+.navbar ul{
+list-style-type:none;
+margin:10px;
+padding:0;
+}
+.navbar-links{
+background-color:#333;
+overflow:hidden;
+}
+.navbar-links li a{
+float:left;
+padding:15px;
+}
+
+.navbar-links li a{
+color:white;
+}
+.title-heading{
+margin-left:10px;
+margin-right:10px;
+margin-top:10px;
+background-color:white;
+padding-left:20px;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+.title-heading .title-heading-img{
+background-color:grey;
+margin-right:20px;
+height:30vh;
+}
+.title-heading-img p{
+padding:12px;
+}
+.title-heading .th-p2{
+ text-align:justify;
+ margin-right:20px;
+}
+.about-me{
+background-color:white;
+margin-top:10px;
+margin-right:10px;
+margin-left:10px;
+padding-left:20px;
+padding-top:20px;
+padding-bottom:20px;
+}
+.about-me .about-me-img{
+background-color:grey;
+margin-right:20px;
+height:20vh;
+}
+.about-me-img p{
+padding:12px;
+}
+.second-line{
+float:right;
+width:25%;
+}
+.first-line{
+float:left;
+width:73%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer{
+background-color:grey;
+margin-right:10px;
+margin-left:10px;
+margin-top:10px;
+padding-left:20px;
+padding-top:20px;
+padding-bottom:20px;
+}
+@media screen and (max-width:600px){
+  .first-line{
+    float:none;
+    width:100% 
+  }
+  .second-line{
+  	float:none;
+    width:100%;
+  }
+}
+@media screen and (max-width:400px){
+ .navbar a{
+	float:none;
+    width:100%;
+    text-align:center;
+  }
+}
+.navbar a:hover{
+  background-color:black;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>My Website</h1>
+    <p>Resize the browser window to see the effect.</p>
+  </div>
+  <div class="navbar">
+  	<ul class="navbar-links">
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a>Link</a></li>
+      <li><a style="float:right">Link</a></li>
+    </ul>
+  </div>
+<div class="row">
+  <div class="first-line">
+    <div class="title-heading">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="title-heading-img"><p>img</p></div>
+      <p>Some text..</p>
+      <p class="th-p2">Sunt in culpa qui officia deserunt mollit anim id est 		laborum 		consectetur adipiscing elit, sed do eiusmod tempor 		 incididunt ut 		labore et dolore magna aliqua. Ut enim ad minim 	 veniam, quis nostrud 	 exercitation ullamco.</p>
+    </div>
+    <div class="title-heading">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="title-heading-img"><p>img</p></div>
+      <p>Some text..</p>
+      <p class="th-p2">Sunt in culpa qui officia deserunt mollit anim id est 		laborum 		consectetur adipiscing elit, sed do eiusmod tempor 		 incididunt ut 		labore et dolore magna aliqua. Ut enim ad minim 	 veniam, quis nostrud 	 exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="second-line">
+  	<div class="about-me">
+      <h2>About Me</h2>
+      <div class="about-me-img"><p>img</p></div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="about-me">
+      <h2>About Me</h2>
+      <div class="about-me-img"><p>img</p></div>
+      <div class="about-me-img"><p>img</p></div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="about-me">
+      <h2>Follow Me</h2>
+      <p>Some text...</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
